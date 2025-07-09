@@ -1,0 +1,37 @@
+:root {
+  /* Primary Colors */
+  --primary-dark: #2c4a5c;
+  --primary-medium: #5b7a8a;
+  --primary-light: #d4c4b8;
+  --primary-lightest: #f5f2f0;
+  
+  /* Semantic Colors */
+  --background-primary: var(--primary-lightest);
+  --background-secondary: var(--primary-light);
+  --text-primary: var(--primary-dark);
+  --text-secondary: var(--primary-medium);
+  --accent: var(--primary-medium);
+  
+  /* Component Colors */
+  --card-background: var(--primary-lightest);
+  --card-border: var(--primary-light);
+  --button-primary: var(--primary-dark);
+  --button-secondary: var(--primary-medium);
+  --button-hover: #1e3440;
+  
+  /* Utility Colors */
+  --shadow: rgba(44, 74, 92, 0.15);
+  --overlay: rgba(44, 74, 92, 0.8);
+  --border: rgba(91, 122, 138, 0.3);
+}
+
+/* Alternative color classes */
+.bg-dark { background-color: var(--primary-dark); }
+.bg-medium { background-color: var(--primary-medium); }
+.bg-light { background-color: var(--primary-light); }
+.bg-lightest { background-color: var(--primary-lightest); }
+
+.text-dark { color: var(--primary-dark); }
+.text-medium { color: var(--primary-medium); }
+.text-light { color: var(--primary-light); }
+.text-lightest { color: var(--primary-lightest); }

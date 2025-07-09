@@ -1,0 +1,61 @@
+{
+    "name": "Dor Bergel",
+    "title": "Software Developer | QA Automation Engineer",
+    "summary": "Software Developer with over 2 years of hands-on experience in building reliable automated systems. Skilled in C++ and Python, with experience in performance testing, API development with Postman, and database management MongoDB. Known for strong attention to detail, a problem-solving approach, and the ability to work well with QA and development team to improve project outcomes. Comfortable working in CI/CD environments and tracking progress using Git.",
+    "contact": {
+      "email": "dor.bergel9@gmail.com",
+      "phone": "+972-54-499-4834",
+      "linkedin": "https://linkedin.com/in/dor-bergel",
+      "github": "https://github.com/DorBergel"
+    },
+    "work_experience": [
+      {
+        "position": "Automation Engineer",
+        "company": "Softil Ltd.",
+        "duration": "2022 - Present",
+        "responsibilities": [
+          "Created and optimized automation tests for web and UI applications using Python and MongoDB.",
+          "Developed and maintained automation infrastructure with Jenkins and Git, integrating continuous testing.",
+          "Conducted performance testing with Python to ensure speed and stability benchmarks.",
+          "Collaborated with QA and dev teams to identify and resolve bugs quickly using Jira."
+        ]
+      },
+      {
+        "position": "Iron Dome Interceptor",
+        "company": "IDF",
+        "duration": "2018 – 2021",
+        "responsibilities": [
+          "Completed basic training 03.",
+          "Served 8 months as Iron Dome soldier responsible for launcher deployment and security.",
+          "Served as an interceptor in the southern region.",
+          "Instructed at the interceptors course."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Holon Institute of Technology",
+        "degree": "B.Sc. in Computer Science",
+        "duration": "2021 - 2024"
+      },
+      {
+        "institution": "HTH High School, Holon",
+        "major": "Technology Science",
+        "duration": "2012 – 2018"
+      }
+    ],
+    "iconSkills": [
+        "bash", "c++", "copilot", "css", "expressjs",
+        "git", "github", "html", "kotlin", "linux", 
+        "mongodb", "nodejs", "postman", "python", "react"
+    ],
+    "skills": [
+        "c", "c++", "c#", "python",
+        "html", "css", "bootstrap",
+        "javascript", "nodejs", "react", "expressjs",
+        "kotlin", "linux", "bash", "git", "jenkins",
+        "mongodb", "postman", "jira", "selenium", "github copilot", 
+        "tcp", "udp", "dns", "sip", "sdp",
+        "qa automation scripts", "results analysis"
+      ]
+  }
