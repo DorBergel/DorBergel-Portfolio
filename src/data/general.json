@@ -45,9 +45,10 @@
       }
     ],
     "iconSkills": [
-        "bash", "c++", "copilot", "css", "expressjs",
+        "bash", "c", "c++", "copilot", "css", "expressjs",
         "git", "github", "html", "kotlin", "linux", 
-        "mongodb", "nodejs", "postman", "python", "react"
+        "mongodb", "websocket", "pandas", "nodejs", "postman", "python", "react", "jenkins",
+        "jira"
     ],
     "skills": [
         "c", "c++", "c#", "python",
@@ -57,5 +58,30 @@
         "mongodb", "postman", "jira", "selenium", "github copilot", 
         "tcp", "udp", "dns", "sip", "sdp",
         "qa automation scripts", "results analysis"
-      ]
+      ],
+    "projects": [
+      {
+        "name": "RT-Chat",
+        "description": "Developed a real-time chat application using React and Node.js, implementing WebSocket for live messaging and MongoDB for data storage.",
+        "technologies": ["React", "Nodejs", "Expressjs", "MongoDB", "WebSocket"],
+        "link": "https://github.com/DorBergel/Real-Time-Chat-App",
+        "image": "/public/images/rt-chat.png"        
+      },
+      {
+        "name": "API Testing Suite",
+        "description": "Created an API testing suite using Postman to ensure reliability and performance of backend services, achieving 95% test coverage.",
+        "technologies": ["Postman", "Python", "Git"],
+        "link": "github.com/DorBergel/api-testing-suite",
+        "image": "https://example.com/api-testing-suite.png"
+      },
+      {
+        "name": "Performance Testing Tool",
+        "description": "Built a performance testing tool in Python to evaluate system speed and stability, identifying bottlenecks and improving response times by 30%.",
+        "technologies": ["Python", "MongoDB", "Git"],
+        "link": "github.com/DorBergel/performance-testing-tool",
+        "image": "https://example.com/performance-testing-tool.png"
+      }
+    ]
+      
+      
   }

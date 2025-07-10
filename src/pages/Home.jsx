@@ -4,6 +4,7 @@ import { Row, Col, Stack } from "react-bootstrap";
 import "../styles/colors.css";
 import generalData from "../data/general.json";
 import StackIcon from "tech-stack-icons";
+import ProjectCard from "../components/ProjectCard";
 
 
 
@@ -37,7 +38,7 @@ const Home = () => {
             {generalData.iconSkills.map((skill, index) => (
               <div key={`first-${index}`} className="tech-icon">
                 <img
-                  src={`/src/assets/${skill}.svg`}
+                  src={`/icons/${skill}.svg`}
                   alt={`${skill}-icon`}
                   className="tech-icon"
                   onError={(e) => {
@@ -55,7 +56,7 @@ const Home = () => {
             {generalData.iconSkills.map((skill, index) => (
               <div key={`second-${index}`} className="tech-icon">
                 <img
-                  src={`/src/assets/${skill}.svg`}
+                  src={`/icons/${skill}.svg`}
                   alt={`${skill}-icon`}
                   className="tech-icon"
                   onError={(e) => {
@@ -71,38 +72,30 @@ const Home = () => {
           </div>
         </section>
       </section>
+
+      <section className="projects">
+        <h1>Projects</h1>
+        <Row className="project-row">
+            <Col md={4} sm={12}>
+              <Row>
+                <Col className="mb-4">
+                  <ProjectCard project={generalData.projects[0]} />
+                </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <ProjectCard project={generalData.projects[2]} />
+                  </Col>
+              </Row>
+            </Col>
+            <Col md={4} sm={12}>
+              <ProjectCard project={generalData.projects[1]} />
+            </Col>
+
+        </Row>
+      </section>
     </div>
   );
 };
 
 export default Home;
-
-/*
-<section className="tech-slider-wrapper">
-  <div className="tech-slider">
-    {[
-      "c++.svg",
-      "csharp.svg",
-      "python.svg",
-      "html5.svg",
-      "css3.svg",
-      "bootstrap.svg",
-      "javascript.svg",
-      "react.svg",
-      "kotlin.svg",
-      "linux.svg",
-      "nodejs.svg",
-      "jenkins.svg",
-      "git.svg",
-      "debug.svg"
-    ].map((icon, index) => (
-      <img
-        key={index}
-        src={`/src/assets/${icon}`}
-        alt={`tech-${index}`}
-        className="tech-icon"
-      />
-    ))}
-  </div>
-</section>
-*/

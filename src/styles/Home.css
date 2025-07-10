@@ -143,3 +143,37 @@
   max-width: 100vw;
   overflow-x: hidden;
 }
+
+.projects {
+  padding: 2% 7%; /* Added padding for spacing */
+  background-color: var(--background-secondary); /* Optional: Add a background color */
+  color: var(--text-primary);
+}
+
+.projects h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.projects p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify; /* Improved readability */
+}
+
+.projects .project-row {
+  display: flex !important;
+  flex-wrap: wrap !important; /* Allow wrapping for smaller screens */
+  justify-content: center !important; /* Center the project cards */
+  
+}
+
+.project-card {
+  background-color: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
