@@ -1,109 +1,109 @@
 .project-card {
-    position: relative;
-    background-color: var(--background-secondary);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    padding: 20px;
-    color: var(--text-primary);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+  position: relative;
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 20px;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-height: fit-content;
+  justify-content: center;
 }
 
 .top {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .top img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Animation to jump card on hover*/
 .project-card:hover {
-    transform: scale(1.05) rotateY(5deg);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) rotateY(5deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h1 {
-    text-align: start;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--text-primary);
-    position: relative;
-    z-index: 2;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 2;
 }
 
 .project-card .content {
-    position: relative;
-    text-align: start;
-    z-index: 2;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  position: relative;
+  text-align: start;
+  z-index: 2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .tech-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    font-size: 14px;
-    color: var(--text-secondary);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 50px;
-    height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 50px;
+  height: 40px;
 }
 
 .tech-item:hover {
-    transform: scale(1.2) rotate(5deg);
-    background-color: var(--accent-color, --background-secondary);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.2) rotate(5deg);
+  background-color: var(--accent-color, --background-secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .tech-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 .repo-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    cursor: pointer;
-    animation: pulse 2s infinite ease-in-out;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  animation: pulse 2s infinite ease-in-out;
 }
 
 .repo-icon:hover {
-    animation-play-state: paused;
-    transform: translateY(5px) scale(1.1);
+  animation-play-state: paused;
+  transform: translateY(5px) scale(1.1);
 }
 
 @keyframes pulse {
-    0% {
-        transform: translateY(0) scale(1);
-    }
-    50% {
-        transform: translateY(-5px) scale(1.1);
-    }
-    100% {
-        transform: translateY(0) scale(1);
-    }
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
-

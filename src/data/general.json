@@ -1,87 +1,151 @@
 {
-    "name": "Dor Bergel",
-    "title": "Software Developer | QA Automation Engineer",
-    "summary": "Software Developer with over 2 years of hands-on experience in building reliable automated systems. Skilled in C++ and Python, with experience in performance testing, API development with Postman, and database management MongoDB. Known for strong attention to detail, a problem-solving approach, and the ability to work well with QA and development team to improve project outcomes. Comfortable working in CI/CD environments and tracking progress using Git.",
-    "contact": {
-      "email": "dor.bergel9@gmail.com",
-      "phone": "+972-54-499-4834",
-      "linkedin": "https://linkedin.com/in/dor-bergel",
-      "github": "https://github.com/DorBergel"
+  "name": "Dor Bergel",
+  "title": "Software Developer | QA Automation Engineer",
+  "summary": "Software Developer with over 2 years of hands-on experience in building reliable automated systems. Skilled in C++ and Python, with experience in performance testing, API development with Postman, and database management MongoDB. Known for strong attention to detail, a problem-solving approach, and the ability to work well with QA and development team to improve project outcomes. Comfortable working in CI/CD environments and tracking progress using Git.",
+  "contact": {
+    "email": "dor.bergel9@gmail.com",
+    "phone": "+972-54-499-4834",
+    "linkedin": "https://linkedin.com/in/dor-bergel",
+    "github": "https://github.com/DorBergel"
+  },
+  "work_experience": [
+    {
+      "position": "QA & Automation Engineer",
+      "company": "Softil Ltd.",
+      "duration": "2022 - Present",
+      "responsibilities": [
+        "Created and optimized automation tests for web and UI applications using Python and MongoDB.",
+        "Developed and maintained automation infrastructure with Jenkins and Git, integrating continuous testing.",
+        "Conducted performance testing with Python to ensure speed and stability benchmarks.",
+        "Collaborated with QA and dev teams to identify and resolve bugs quickly using Jira."
+      ]
     },
-    "work_experience": [
-      {
-        "position": "Automation Engineer",
-        "company": "Softil Ltd.",
-        "duration": "2022 - Present",
-        "responsibilities": [
-          "Created and optimized automation tests for web and UI applications using Python and MongoDB.",
-          "Developed and maintained automation infrastructure with Jenkins and Git, integrating continuous testing.",
-          "Conducted performance testing with Python to ensure speed and stability benchmarks.",
-          "Collaborated with QA and dev teams to identify and resolve bugs quickly using Jira."
-        ]
-      },
-      {
-        "position": "Iron Dome Interceptor",
-        "company": "IDF",
-        "duration": "2018 – 2021",
-        "responsibilities": [
-          "Completed basic training 03.",
-          "Served 8 months as Iron Dome soldier responsible for launcher deployment and security.",
-          "Served as an interceptor in the southern region.",
-          "Instructed at the interceptors course."
-        ]
-      }
-    ],
-    "education": [
-      {
-        "institution": "Holon Institute of Technology",
-        "degree": "B.Sc. in Computer Science",
-        "duration": "2021 - 2024"
-      },
-      {
-        "institution": "HTH High School, Holon",
-        "major": "Technology Science",
-        "duration": "2012 – 2018"
-      }
-    ],
-    "iconSkills": [
-        "bash", "c", "c++", "copilot", "css", "expressjs",
-        "git", "github", "html", "kotlin", "linux", 
-        "mongodb", "websocket", "pandas", "nodejs", "postman", "python", "react", "jenkins",
-        "jira"
-    ],
-    "skills": [
-        "c", "c++", "c#", "python",
-        "html", "css", "bootstrap",
-        "javascript", "nodejs", "react", "expressjs",
-        "kotlin", "linux", "bash", "git", "jenkins",
-        "mongodb", "postman", "jira", "selenium", "github copilot", 
-        "tcp", "udp", "dns", "sip", "sdp",
-        "qa automation scripts", "results analysis"
-      ],
-    "projects": [
-      {
-        "name": "RT-Chat",
-        "description": "Developed a real-time chat application using React and Node.js, implementing WebSocket for live messaging and MongoDB for data storage.",
-        "technologies": ["React", "Nodejs", "Expressjs", "MongoDB", "WebSocket"],
-        "link": "https://github.com/DorBergel/Real-Time-Chat-App",
-        "image": "/public/images/rt-chat.png"        
-      },
-      {
-        "name": "API Testing Suite",
-        "description": "Created an API testing suite using Postman to ensure reliability and performance of backend services, achieving 95% test coverage.",
-        "technologies": ["Postman", "Python", "Git"],
-        "link": "github.com/DorBergel/api-testing-suite",
-        "image": "https://example.com/api-testing-suite.png"
-      },
-      {
-        "name": "Performance Testing Tool",
-        "description": "Built a performance testing tool in Python to evaluate system speed and stability, identifying bottlenecks and improving response times by 30%.",
-        "technologies": ["Python", "MongoDB", "Git"],
-        "link": "github.com/DorBergel/performance-testing-tool",
-        "image": "https://example.com/performance-testing-tool.png"
-      }
-    ]
-      
-      
-  }
+    {
+      "position": "Iron Dome Interceptor",
+      "company": "IDF",
+      "duration": "2018 – 2021",
+      "responsibilities": [
+        "Completed basic training 03.",
+        "Served 8 months as Iron Dome soldier responsible for launcher deployment and security.",
+        "Served as an interceptor in the southern region.",
+        "Instructed at the interceptors course."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Holon Institute of Technology",
+      "degree": "B.Sc. in Computer Science",
+      "duration": "2021 - 2024",
+      "content": [
+        "Courses in C++, Python, Web Development, and Database Management.",
+        "Algorithms and Data Structures, Software Engineering, and System Design.",
+        "Security, Networking, Low-Level Programming"
+      ]
+    },
+    {
+      "institution": "HTH High School, Holon",
+      "major": "Technology Science",
+      "duration": "2012 – 2018"
+    }
+  ],
+  "iconSkills": [
+    "bash",
+    "c",
+    "c++",
+    "copilot",
+    "css",
+    "expressjs",
+    "git",
+    "github",
+    "html",
+    "kotlin",
+    "linux",
+    "mongodb",
+    "websocket",
+    "pandas",
+    "nodejs",
+    "postman",
+    "python",
+    "react",
+    "jenkins",
+    "jira"
+  ],
+  "skills": [
+    "c",
+    "c++",
+    "c#",
+    "python",
+    "html",
+    "css",
+    "bootstrap",
+    "javascript",
+    "nodejs",
+    "react",
+    "expressjs",
+    "kotlin",
+    "linux",
+    "bash",
+    "git",
+    "jenkins",
+    "mongodb",
+    "postman",
+    "jira",
+    "selenium",
+    "github copilot",
+    "tcp",
+    "udp",
+    "dns",
+    "sip",
+    "sdp",
+    "qa automation scripts",
+    "results analysis"
+  ],
+  "iconSkillCategories": [
+    {
+      "name": "Languages",
+      "skills": ["c", "c++", "c#", "python", "javascript", "kotlin"],
+      "content": "Proficient in multiple programming languages, with a focus on C++, Python, and JavaScript for backend and automation tasks."
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "skills": ["react", "expressjs", "selenium", "bootstrap", "NET"],
+      "content": "Experienced in using React for frontend development, Express.js for backend services, and Selenium for automation testing."
+    },
+    {
+      "name": "Networking & Tools",
+      "skills": ["OSI Model", "Stracture", "Metasploit", "Wireshark", "Scapy"],
+      "content": "Knowledgeable in networking concepts and tools, including the OSI model, network structure, and security testing with Metasploit and Wireshark."
+    },
+    {
+      "name": "Tools & Technologies",
+      "skills": ["git", "jenkins", "mongodb", "postman", "jira", "selenium"],
+      "content": "Proficient in version control with Git, familiar with CI/CD pipelines using Jenkins, and experienced in database management with MongoDB. Skilled in API testing with Postman and project"
+    }
+  ],
+  "projects": [
+    {
+      "name": "RT-Chat",
+      "description": "Developed a real-time chat application using React and Node.js, implementing WebSocket for live messaging and MongoDB for data storage.",
+      "technologies": ["React", "Nodejs", "Expressjs", "MongoDB", "WebSocket"],
+      "link": "https://github.com/DorBergel/Real-Time-Chat-App",
+      "image": "/public/images/rt-chat.png"
+    },
+    {
+      "name": "API Testing Suite",
+      "description": "Created an API testing suite using Postman to ensure reliability and performance of backend services, achieving 95% test coverage.",
+      "technologies": ["Postman", "Python", "Git"],
+      "link": "github.com/DorBergel/api-testing-suite",
+      "image": "https://example.com/api-testing-suite.png"
+    },
+    {
+      "name": "Performance Testing Tool",
+      "description": "Built a performance testing tool in Python to evaluate system speed and stability, identifying bottlenecks and improving response times by 30%.",
+      "technologies": ["Python", "MongoDB", "Git"],
+      "link": "github.com/DorBergel/performance-testing-tool",
+      "image": "https://example.com/performance-testing-tool.png"
+    }
+  ],
+  "about-intro": "Hi, I’m Dor — a software developer with a background in automation and a hands-on approach to problem solving. I’ve spent the last couple of years building test infrastructure and automation pipelines, but what really excites me is getting closer to the system: backend logic, embedded control, and developer tools that \"make life easier\". I may not have all the answers yet, but I’ll keep asking the right questions until something elegant works. Reliable, quiet, and relentless: that’s my style.",
+  "why-me": "I’m passionate about building reliable systems and improving processes. My experience in QA automation has given me a unique perspective on software development, allowing me to identify and resolve issues early in the development cycle. I thrive in collaborative environments where I can work closely with both QA and development teams to enhance project outcomes. My goal is to contribute to projects that challenge me and allow me to grow as a developer."
+}

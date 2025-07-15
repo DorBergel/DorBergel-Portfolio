@@ -1,28 +1,286 @@
-/* filepath: c:\Users\DBergel\Desktop\DorBergel-Portfolio\src\styles\About.css */
+/* filepath: /Users/dorbergel/Documents/Programming Projects/DorBergel-Portfolio/src/styles/About.css */
+
+/* Main About Container */
 .about {
-    height: 100%;
-    width: 100%;
-    background-color: var(--background-primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
+  min-height: 100vh;
+  width: 100%;
+  padding: 4% 7%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-primary),
+    var(--background-secondary)
+  );
 }
 
-.about h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--text-primary);
-    text-align: center;
+/* About Intro Section */
+.about-intro {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-.about p {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+.about-intro-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-intro-col {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.about-intro-col:hover {
+  transform: translateY(-5px);
+}
+
+.profile-image {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 5px solid var(--background-secondary);
+  background-color: var(--background-secondary);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-intro-col:hover .profile-image {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.about-intro-col h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about-intro-col h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--button-primary);
+  border-radius: 2px;
+}
+
+.about-intro-col p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+/* About Tech Section */
+.about-tech {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-tech:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tech-table {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--background-secondary) !important;
+}
+
+.tech-table:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tech-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-col {
+  flex: 1;
+  min-width: 250px;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-col:hover {
+  transform: translateY(-5px);
+}
+
+.tech-col h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.tech-col p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.tech-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-col li {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.tech-col li::before {
+  content: "•";
+  color: var(--button-primary);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.tech-col img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+/* Work Experience Cell */
+.work-experience-cell,
+.education-cell {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.work-experience-cell ul,
+.education-cell ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  text-align: start;
+}
+
+.work-experience-cell li,
+.education-cell li {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 5px 0;
+  display: flex;
+}
+
+/* Why Choose Me Section */
+.why-choose-me {
+  padding: 2rem;
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: var(--text-primary);
+  margin: 3rem 0;
+  transition: all 0.3s ease;
+  height: 100%; /* Ensure it takes full height */
+}
+
+.why-choose-me:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.why-choose-me h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.why-choose-me h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--button-primary);
+  border-radius: 2px;
+}
+
+.why-choose-me p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary, #666);
+  margin-bottom: 1.5rem;
+  text-align: start;
+}
+
+.tech-cards .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-card-col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.tech-card-col > div {
+  flex: 1 1 auto; /* This makes both children take the same height */
+  height: 100%; /* Ensures full height */
+}
+
+@media (max-width: 768px) {
+  .why-choose-me {
+    padding: 1.5rem;
+  }
 }
