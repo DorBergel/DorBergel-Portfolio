@@ -43,10 +43,9 @@ const Navbar = () => {
               About
             </Nav.Link>
             <Nav.Link
-              as={ScrollLink}
-              to="projects"
-              smooth={true}
-              duration={500}
+              as={RouterLink}
+              to="/projects"
+              
             >
               Projects
             </Nav.Link>

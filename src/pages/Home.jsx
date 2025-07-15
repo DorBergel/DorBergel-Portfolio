@@ -149,7 +149,9 @@ const Home = () => {
         </section>
       </section>
       <section className="projects">
-        <h1>Projects</h1>
+        <div className="projects-header">
+          <h1>Projects</h1>
+        </div>
         <Row className="project-row">
           <Col md={4} sm={12}>
             <Stack gap={4}>

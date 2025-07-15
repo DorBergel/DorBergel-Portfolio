@@ -1,0 +1,319 @@
+.projects {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 4% 7%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-primary),
+      var(--background-secondary)
+    );
+  }
+  
+  .projects-section {
+    width: 100%;
+  }
+  
+  .projects-header {
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .projects-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .projects-header h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--button-primary);
+    border-radius: 2px;
+  }
+  
+  .project-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  /* Basic Project Card */
+  .project-card {
+    background-color: var(--background-secondary);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .project-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 20px 20px 10px 20px;
+  }
+  
+  .project-card p {
+    color: var(--text-secondary);
+    margin: 0 20px 15px 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 20px 20px 20px;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 15px;
+    margin: 0 20px 20px 20px;
+    margin-top: auto;
+  }
+  
+  .project-link {
+    padding: 10px 20px;
+    background-color: var(--button-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .project-link:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Extended Project Card */
+  .project-extended {
+    background-color: var(--background-secondary);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .project-extended:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-header {
+    padding: 30px;
+    background: linear-gradient(135deg, var(--background-primary), var(--background-secondary));
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .project-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+  }
+  
+  .project-header p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  .project-extended .project-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .project-content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .project-objective,
+  .project-key-achievements,
+  .technologies-implemented,
+  .impact-and-future-work {
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+  }
+  
+  .project-objective:hover,
+  .project-key-achievements:hover,
+  .technologies-implemented:hover,
+  .impact-and-future-work:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .project-content h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--button-primary);
+    border-radius: 1px;
+  }
+  
+  .project-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .project-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .project-content li {
+    color: var(--text-secondary);
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+  }
+  
+  .project-content li::before {
+    content: "•";
+    color: var(--button-primary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Bootstrap Row/Col Overrides */
+  .projects .project-row.row {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .projects .project-row .col-sm-12,
+  .projects .project-row .col-md-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .project-content {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      padding: 3% 5%;
+    }
+  
+    .projects-header h1 {
+      font-size: 2.2rem;
+    }
+  
+    .project-card {
+      margin: 10px 0;
+      max-width: 100%;
+    }
+  
+    .project-extended .project-image {
+      height: 250px;
+    }
+  
+    .project-content {
+      padding: 20px;
+      gap: 15px;
+    }
+  
+    .project-header {
+      padding: 20px;
+    }
+  
+    .project-header h2 {
+      font-size: 1.6rem;
+    }
+  
+    .project-links {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .project-card h2 {
+      font-size: 1.3rem;
+    }
+  
+    .project-content {
+      padding: 15px;
+    }
+  
+    .project-objective,
+    .project-key-achievements,
+    .technologies-implemented,
+    .impact-and-future-work {
+      padding: 15px;
+    }
+  }
