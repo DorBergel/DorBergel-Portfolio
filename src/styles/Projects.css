@@ -1,365 +1,392 @@
 .projects {
-    min-height: 100vh;
-    width: 100vw;
-    padding: 4% 7%;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    background-image: linear-gradient(
-      to bottom,
-      var(--background-primary),
-      var(--background-secondary)
-    );
-  }
-  
-  .projects-section {
-    width: 100%;
-  }
-  
-  .projects-header {
-    margin-bottom: 60px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .projects-header h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 20px;
-    position: relative;
-  }
-  
-  .projects-header h1::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: var(--button-primary);
-    border-radius: 2px;
-  }
-  
-  .project-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 40px;
-  }
+  min-height: 100vh;
+  width: 100vw;
+  padding: 4% 7%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-primary),
+    var(--background-secondary)
+  );
+}
 
-  .projects-column {
-    width: 100%;
+.projects-section {
+  width: 100%;
+}
 
-  }
-  
-  /* Basic Project Card */
-  .project-card {
-    background-color: var(--background-secondary);
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    --s: 80px;
-    --_g: #0000, var(--c1) 2deg calc(var(--a) - 2deg), #0000 var(--a);
-    background: 
-        conic-gradient(from calc(-45deg - var(--a)/2) at top var(--p) left var(--p), var(--_g)),
-        conic-gradient(from calc(-45deg - var(--a)/2) at top var(--p) left var(--p), var(--_g)),
-        conic-gradient(from calc(45deg - var(--a)/2) at top var(--p) right var(--p), var(--_g)),
-        conic-gradient(from calc(45deg - var(--a)/2) at top var(--p) right var(--p), var(--_g)),
-        conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left var(--p), var(--_g)),
-        conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left var(--p), var(--_g)),
-        conic-gradient(from calc(135deg - var(--a)/2) at bottom var(--p) right var(--p), var(--_g)),
-        conic-gradient(from calc(135deg - var(--a)/2) at bottom var(--p) right var(--p), var(--_g))
-        var(--c2);
-    background-size: calc(2 * var(--s)) calc(2 * var(--s));
-    animation: m 2s infinite alternate linear;
+.projects-header {
+  margin-bottom: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.projects-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.projects-header h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--button-primary);
+  border-radius: 2px;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.projects-column {
+  width: 100%;
+}
+
+/* Basic Project Card */
+.project-card {
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --s: 80px;
+  --_g: #0000, var(--c1) 2deg calc(var(--a) - 2deg), #0000 var(--a);
+  background: conic-gradient(
+      from calc(-45deg - var(--a) / 2) at top var(--p) left var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(-45deg - var(--a) / 2) at top var(--p) left var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(45deg - var(--a) / 2) at top var(--p) right var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(45deg - var(--a) / 2) at top var(--p) right var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(-135deg - var(--a) / 2) at bottom var(--p) left var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(-135deg - var(--a) / 2) at bottom var(--p) left var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(135deg - var(--a) / 2) at bottom var(--p) right var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+        from calc(135deg - var(--a) / 2) at bottom var(--p) right var(--p),
+        var(--_g)
+      )
+      var(--c2);
+  background-size: calc(2 * var(--s)) calc(2 * var(--s));
+  animation: m 2s infinite alternate linear;
 }
 
 @property --a {
-    syntax: '<angle>';
-    inherits: true;
-    initial-value: 0deg;
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
 }
 @property --p {
-    syntax: '<percentage>';
-    inherits: true;
-    initial-value: 0%;
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
 }
 @property --c1 {
-    syntax: '<color>';
-    inherits: true;
-    initial-value: #000;
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #000;
 }
 @property --c2 {
-    syntax: '<color>';
-    inherits: true;
-    initial-value: #000;
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #000;
 }
 
 @keyframes m {
-    0%, 15% {
-        --a: 135deg;
-        --p: 20%;
-        --c1: #3B8183;
-        --c2: #FAD089;
-        background-position: 0 0, var(--s) var(--s);
-    }
-    45%, 50% {
-        --a: 90deg;
-        --p: 25%;
-        --c1: #3B8183;
-        --c2: #FAD089;
-        background-position: 0 0, var(--s) var(--s);
-    }
-    50.01%, 55% {
-        --a: 90deg;
-        --p: 25%;
-        --c2: #3B8183;
-        --c1: #FAD089;
-        background-position: var(--s) 0, 0 var(--s);
-    }
-    85%, 100% {
-        --a: 135deg;
-        --p: 20%;
-        --c2: #3B8183;
-        --c1: #FAD089;
-        background-position: var(--s) 0, 0 var(--s);
-    }
+  0%,
+  15% {
+    --a: 135deg;
+    --p: 20%;
+    --c1: #3b8183;
+    --c2: #fad089;
+    background-position: 0 0, var(--s) var(--s);
+  }
+  45%,
+  50% {
+    --a: 90deg;
+    --p: 25%;
+    --c1: #3b8183;
+    --c2: #fad089;
+    background-position: 0 0, var(--s) var(--s);
+  }
+  50.01%,
+  55% {
+    --a: 90deg;
+    --p: 25%;
+    --c2: #3b8183;
+    --c1: #fad089;
+    background-position: var(--s) 0, 0 var(--s);
+  }
+  85%,
+  100% {
+    --a: 135deg;
+    --p: 20%;
+    --c2: #3b8183;
+    --c1: #fad089;
+    background-position: var(--s) 0, 0 var(--s);
+  }
 }
 
-    .project-image img {
-        width: 70px;
-        height: 70px;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-        border-radius: 12px;
-    }
-  
-  .project-card h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin: 20px 20px 10px 20px;
-  }
-  
-  .project-card p {
-    color: var(--text-secondary);
-    margin: 0 20px 15px 20px;
-    line-height: 1.6;
-    font-size: 1rem;
-  }
-  
-  .project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 0 20px 20px 20px;
-  }
-  
-  .project-links {
-    display: flex;
-    gap: 15px;
-    margin: 0 20px 20px 20px;
-    margin-top: auto;
-  }
-  
-  .project-link {
-    padding: 10px 20px;
-    background-color: var(--button-primary);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    flex: 1;
-    text-align: center;
-  }
-  
-  .project-link:hover {
-    background-color: var(--button-hover);
-    transform: translateY(-2px);
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Extended Project Card */
-  .project-extended {
-    background-color: var(--background-secondary);
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    margin: 20px 0;
-    width: 100%;
-  }
-  
-  .project-extended:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project-header {
-    padding: 30px;
-    border-bottom: 1px solid var(--border);
-  }
-  
-  .project-header h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 15px;
-  }
-  
-  .project-header p {
-    color: var(--text-secondary);
-    line-height: 1.7;
-    font-size: 1.1rem;
-    margin: 0;
-  }
-  
-  .project-extended .project-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-  }
+.project-image img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
 
-    .project-extended .project-image img {
-        margin: 30px;
-    }
-  
-  .project-content {
-    padding: 30px;
-  }
-  
-  /* Remove border from row and fix spacing */
-  .project-content-row {
-    width: 100%;
-    margin: 0 0 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-evenly;
-  }
-  
-  /* Enhance column styling */
-  .project-content-col {      
-    padding: 25px;
-    background-color: rgba(255, 255, 255, 0.03);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+.project-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 20px 20px 10px 20px;
+}
 
-  .project-content-col:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-  }
-  
-  /* Improve section styling */
-  .project-objective,
-  .project-key-achievements,
-  .project-technologies,
-  .project-impact {
-    margin-bottom: 0;
-    height: 100%;
-  }
-  
-  /* Style headings */
-  .project-content-col h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 15px;
-    position: relative;
-    padding-bottom: 10px;
-  }
+.project-card p {
+  color: var(--text-secondary);
+  margin: 0 20px 15px 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
 
-  .project-content-col h3::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 3px;
-    background-color: var(--button-primary);
-    border-radius: 2px;
-  }
-  
-  /* Style list items */
-  .project-key-achievements ul {
-    padding-left: 20px;
-    margin-bottom: 0;
-  }
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 20px 20px 20px;
+}
 
-  .project-key-achievements li {
-    margin-bottom: 8px;
-    position: relative;
-    color: var(--text-secondary);
-    line-height: 1.6;
-  }
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin: 0 20px 20px 20px;
+  margin-top: auto;
+}
 
-  .project-key-achievements li:last-child {
-    margin-bottom: 0;
-  }
-  
-  /* Style tech tags */
-  .tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+.project-link {
+  padding: 10px 20px;
+  background-color: var(--button-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
 
-  .tech-tag {
-    padding: 6px 12px;
-    background-color: var(--button-primary);
-    color: white;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    display: inline-block;
-    transition: all 0.2s ease;
-  }
+.project-link:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
 
-  .tech-tag:hover {
-    background-color: var(--button-hover);
-    transform: scale(1.05);
-  }
-  
-  /* Improve paragraph text */
-  .project-content-col p {
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 0;
-  }
-  
-  .projects-carousel {
+/* Extended Project Card */
+.project-extended {
+  background-color: var(--background-secondary);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.project-extended:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-header {
+  padding: 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.project-header p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.project-extended .project-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.project-extended .project-image img {
+  margin: 30px;
+}
+
+.project-content {
+  padding: 30px;
+}
+
+/* Remove border from row and fix spacing */
+.project-content-row {
+  width: 100%;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+/* Enhance column styling */
+.project-content-col {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content-col:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Improve section styling */
+.project-objective,
+.project-key-achievements,
+.project-technologies,
+.project-impact {
+  margin-bottom: 0;
+  height: 100%;
+}
+
+/* Style headings */
+.project-content-col h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.project-content-col h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--button-primary);
+  border-radius: 2px;
+}
+
+/* Style list items */
+.project-key-achievements ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.project-key-achievements li {
+  margin-bottom: 8px;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.project-key-achievements li:last-child {
+  margin-bottom: 0;
+}
+
+/* Style tech tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  padding: 6px 12px;
+  background-color: var(--button-primary);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05);
+}
+
+/* Improve paragraph text */
+.project-content-col p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.projects-carousel {
   width: 100%;
   padding: 20px 0;
 }
@@ -367,7 +394,6 @@
 .carousel-item-wrapper {
   padding: 0 10px;
 }
-
 
 /* Customize slick dots */
 .slick-dots li button:before {
@@ -379,7 +405,7 @@
 }
 
 /* Style carousel arrows */
-.slick-prev, 
+.slick-prev,
 .slick-next {
   font-size: 0;
   line-height: 0;
@@ -417,7 +443,7 @@
   .slick-prev {
     left: -10px;
   }
-  
+
   .slick-next {
     right: -10px;
   }

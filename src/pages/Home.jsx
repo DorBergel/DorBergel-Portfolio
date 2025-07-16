@@ -20,7 +20,7 @@ const Home = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
+  };
 
   // Region: Contact Handlers
   const handleOnGmailClick = () => {
@@ -78,7 +78,7 @@ const Home = () => {
         console.error("Error sending email:", error);
       });
 
-      emailjs
+    emailjs
       .sendForm(
         "service_wogw7sg",
         "template_7a8olhi",
@@ -109,20 +109,12 @@ const Home = () => {
       <ToastContainer position="bottom-right" autoClose={3000} />
       <section className="hero">
         <Row className="hero-row">
-          <Col
-            md={6}
-            sm={12}
-            className="hero-text"
-          >
+          <Col md={6} sm={12} className="hero-text">
             <h1>{generalData.name}</h1>
             <h2>{generalData.title}</h2>
             <Button variant="primary">Download CV</Button>
           </Col>
-          <Col
-            md={6}
-            sm={12}
-            className="hero-image-col"
-          >
+          <Col md={6} sm={12} className="hero-image-col">
             <img
               src="/public/images/profile1.png"
               alt="Hero"
@@ -189,6 +181,16 @@ const Home = () => {
           <Col md={4} sm={12} className="project-card-col">
             <ProjectCard project={generalData.projects[1]} />
           </Col>
+
+          <div className="for-more-button">
+            <a
+              onClick={() => {
+                window.location.href = "/projects";
+              }}
+            >
+              {`>`}
+            </a>
+          </div>
         </Row>
       </section>
       <section className="contact">
