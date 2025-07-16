@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import reactLogo from "../public/icons/react.svg";
 import viteLogo from "/vite.svg";
