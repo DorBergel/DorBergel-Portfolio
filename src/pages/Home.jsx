@@ -12,6 +12,16 @@ import emailjs from "@emailjs/browser";
 const Home = () => {
   const form = React.useRef();
 
+  // Handle Download Resume
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/files/Dor_Bergel_Resume.pdf"; // Adjust the path to your resume file
+    link.download = "Dor_Bergel_Resume.pdf"; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   // Region: Contact Handlers
   const handleOnGmailClick = () => {
     // Copy the email address to the clipboard
@@ -48,11 +58,30 @@ const Home = () => {
       message: formData.get("message"),
     };
 
-    // Send the email using EmailJS
+    // Send the recipient's email using EmailJS
     emailjs
       .sendForm(
         "service_xfz6br9",
         "template_frc1p4b",
+        form.current,
+        "nxh9PKOgCa5SOxOUB"
+      )
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        toast.success("Message sent successfully!", {
+          position: "bottom-right",
+          autoClose: 3000,
+        });
+        form.current.reset(); // Reset the form after successful submission
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+
+      emailjs
+      .sendForm(
+        "service_wogw7sg",
+        "template_7a8olhi",
         form.current,
         "nxh9PKOgCa5SOxOUB"
       )
@@ -84,17 +113,15 @@ const Home = () => {
             md={6}
             sm={12}
             className="hero-text"
-            style={{ border: "1px solid black", padding: "20px" }}
           >
             <h1>{generalData.name}</h1>
             <h2>{generalData.title}</h2>
-            <Button variant="primary">Get Started</Button>
+            <Button variant="primary">Download CV</Button>
           </Col>
           <Col
             md={6}
             sm={12}
             className="hero-image-col"
-            style={{ border: "1px solid black" }}
           >
             <img
               src="/public/images/profile1.png"

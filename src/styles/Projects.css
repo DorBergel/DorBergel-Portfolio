@@ -49,6 +49,11 @@
     width: 100%;
     margin-bottom: 40px;
   }
+
+  .projects-column {
+    width: 100%;
+
+  }
   
   /* Basic Project Card */
   .project-card {
@@ -73,8 +78,85 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 12px 12px 0 0;
-  }
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --s: 80px;
+    --_g: #0000, var(--c1) 2deg calc(var(--a) - 2deg), #0000 var(--a);
+    background: 
+        conic-gradient(from calc(-45deg - var(--a)/2) at top var(--p) left var(--p), var(--_g)),
+        conic-gradient(from calc(-45deg - var(--a)/2) at top var(--p) left var(--p), var(--_g)),
+        conic-gradient(from calc(45deg - var(--a)/2) at top var(--p) right var(--p), var(--_g)),
+        conic-gradient(from calc(45deg - var(--a)/2) at top var(--p) right var(--p), var(--_g)),
+        conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left var(--p), var(--_g)),
+        conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left var(--p), var(--_g)),
+        conic-gradient(from calc(135deg - var(--a)/2) at bottom var(--p) right var(--p), var(--_g)),
+        conic-gradient(from calc(135deg - var(--a)/2) at bottom var(--p) right var(--p), var(--_g))
+        var(--c2);
+    background-size: calc(2 * var(--s)) calc(2 * var(--s));
+    animation: m 2s infinite alternate linear;
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
+@property --p {
+    syntax: '<percentage>';
+    inherits: true;
+    initial-value: 0%;
+}
+@property --c1 {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: #000;
+}
+@property --c2 {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: #000;
+}
+
+@keyframes m {
+    0%, 15% {
+        --a: 135deg;
+        --p: 20%;
+        --c1: #3B8183;
+        --c2: #FAD089;
+        background-position: 0 0, var(--s) var(--s);
+    }
+    45%, 50% {
+        --a: 90deg;
+        --p: 25%;
+        --c1: #3B8183;
+        --c2: #FAD089;
+        background-position: 0 0, var(--s) var(--s);
+    }
+    50.01%, 55% {
+        --a: 90deg;
+        --p: 25%;
+        --c2: #3B8183;
+        --c1: #FAD089;
+        background-position: var(--s) 0, 0 var(--s);
+    }
+    85%, 100% {
+        --a: 135deg;
+        --p: 20%;
+        --c2: #3B8183;
+        --c1: #FAD089;
+        background-position: var(--s) 0, 0 var(--s);
+    }
+}
+
+    .project-image img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        border-radius: 12px;
+    }
   
   .project-card h2 {
     font-size: 1.5rem;
@@ -141,7 +223,6 @@
   
   .project-header {
     padding: 30px;
-    background: linear-gradient(135deg, var(--background-primary), var(--background-secondary));
     border-bottom: 1px solid var(--border);
   }
   
@@ -165,155 +246,179 @@
     max-height: 400px;
     object-fit: cover;
   }
+
+    .project-extended .project-image img {
+        margin: 30px;
+    }
   
   .project-content {
     padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
   }
   
+  /* Remove border from row and fix spacing */
+  .project-content-row {
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  
+  /* Enhance column styling */
+  .project-content-col {      
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-content-col:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Improve section styling */
   .project-objective,
   .project-key-achievements,
-  .technologies-implemented,
-  .impact-and-future-work {
-    background-color: rgba(255, 255, 255, 0.03);
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    transition: all 0.3s ease;
+  .project-technologies,
+  .project-impact {
+    margin-bottom: 0;
+    height: 100%;
   }
   
-  .project-objective:hover,
-  .project-key-achievements:hover,
-  .technologies-implemented:hover,
-  .impact-and-future-work:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-content h3 {
-    font-size: 1.3rem;
+  /* Style headings */
+  .project-content-col h3 {
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 15px;
     position: relative;
+    padding-bottom: 10px;
   }
-  
-  .project-content h3::after {
+
+  .project-content-col h3::after {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
-    width: 30px;
-    height: 2px;
+    width: 40px;
+    height: 3px;
     background-color: var(--button-primary);
-    border-radius: 1px;
+    border-radius: 2px;
   }
   
-  .project-content p {
+  /* Style list items */
+  .project-key-achievements ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+
+  .project-key-achievements li {
+    margin-bottom: 8px;
+    position: relative;
     color: var(--text-secondary);
     line-height: 1.6;
-    margin: 0;
+  }
+
+  .project-key-achievements li:last-child {
+    margin-bottom: 0;
   }
   
-  .project-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  /* Style tech tags */
+  .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tech-tag {
+    padding: 6px 12px;
+    background-color: var(--button-primary);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+
+  .tech-tag:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
   }
   
-  .project-content li {
+  /* Improve paragraph text */
+  .project-content-col p {
     color: var(--text-secondary);
-    margin: 8px 0;
-    padding-left: 20px;
-    position: relative;
-    line-height: 1.5;
+    line-height: 1.7;
+    margin-bottom: 0;
   }
   
-  .project-content li::before {
-    content: "•";
-    color: var(--button-primary);
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 0;
+  .projects-carousel {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carousel-item-wrapper {
+  padding: 0 10px;
+}
+
+
+/* Customize slick dots */
+.slick-dots li button:before {
+  color: var(--button-primary);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--button-primary);
+}
+
+/* Style carousel arrows */
+.slick-prev, 
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: var(--button-primary);
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slick-prev {
+    left: -10px;
   }
   
-  /* Bootstrap Row/Col Overrides */
-  .projects .project-row.row {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
+  .slick-next {
+    right: -10px;
   }
-  
-  .projects .project-row .col-sm-12,
-  .projects .project-row .col-md-12 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1200px) {
-    .project-content {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .projects {
-      padding: 3% 5%;
-    }
-  
-    .projects-header h1 {
-      font-size: 2.2rem;
-    }
-  
-    .project-card {
-      margin: 10px 0;
-      max-width: 100%;
-    }
-  
-    .project-extended .project-image {
-      height: 250px;
-    }
-  
-    .project-content {
-      padding: 20px;
-      gap: 15px;
-    }
-  
-    .project-header {
-      padding: 20px;
-    }
-  
-    .project-header h2 {
-      font-size: 1.6rem;
-    }
-  
-    .project-links {
-      flex-direction: column;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .projects-header h1 {
-      font-size: 1.8rem;
-    }
-  
-    .project-card h2 {
-      font-size: 1.3rem;
-    }
-  
-    .project-content {
-      padding: 15px;
-    }
-  
-    .project-objective,
-    .project-key-achievements,
-    .technologies-implemented,
-    .impact-and-future-work {
-      padding: 15px;
-    }
-  }
+}
