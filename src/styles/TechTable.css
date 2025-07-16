@@ -47,7 +47,7 @@
   font-size: 0.95rem;
   text-align: left;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .toggle-button:hover {

@@ -13,7 +13,7 @@ const TechTable = () => {
       <Row className="tech-table-row">
         <Col lg={12} className="tech-table-col">
           <Row>
-            <Col md={3} sm={12} className="toggles-col">
+            <Col lg={3} md={12} sm={12} className="toggles-col">
               <div className="toggle-buttons">
                 {generalData.iconSkillCategories.map((category, index) => (
                   <button
@@ -28,7 +28,7 @@ const TechTable = () => {
                 ))}
               </div>
             </Col>
-            <Col md={9} sm={12} className="content-col">
+            <Col lg={9} md={12} sm={12} className="content-col">
               {generalData.iconSkillCategories.map((category, index) => {
                 if (category.name === activeCategory) {
                   return (
