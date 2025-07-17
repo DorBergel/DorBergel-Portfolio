@@ -129,7 +129,7 @@
       "description": "Developed a real-time chat application using React and Node.js, implementing WebSocket for live messaging and MongoDB for data storage.",
       "technologies": ["React", "Nodejs", "Expressjs", "MongoDB", "WebSocket"],
       "link": "https://github.com/DorBergel/Real-Time-Chat-App",
-      "image": "/src/data/images/rt-chat.png"
+      "image": "/images/rt-chat.png"
     },
     {
       "name": "API Testing Suite",
@@ -151,7 +151,7 @@
   "projects-page": [
     {
       "basicProjectCard": {
-        "projectImage": "/src/data/images/projects/Pink-Floyd-Browser.png",
+        "projectImage": "/images/projects/Pink-Floyd-Browser.png",
         "projectName": "Pink Floyd Browser",
         "shortDescription": "A Python TCP client-server app for browsing Pink Floyd\u2019s discography using a text database.",
         "technologiesUsed": ["Python", "Sockets", "Text Processing"],
@@ -179,7 +179,7 @@
     },
     {
       "basicProjectCard": {
-        "projectImage": "/src/data/images/projects/Gender-Detection.png",
+        "projectImage": "/images/projects/Gender-Detection.png",
         "projectName": "Gender Detection via Text",
         "shortDescription": "Predicts an author's gender based on linguistic features using classic NLP methods.",
         "technologiesUsed": ["Python", "NLTK", "scikit-learn", "pandas"],
@@ -212,7 +212,7 @@
     },
     {
       "basicProjectCard": {
-        "projectImage": "/src/data/images/projects/Vynil-Price-Prediction.png",
+        "projectImage": "/images/projects/Vynil-Price-Prediction.png",
         "projectName": "Vinyl Price Prediction",
         "shortDescription": "A regression model predicting vinyl record prices based on condition, artist, and other metadata.",
         "technologiesUsed": ["Python", "pandas", "scikit-learn", "Jupyter"],
@@ -240,7 +240,7 @@
     },
     {
       "basicProjectCard": {
-        "projectImage": "/src/data/images/projects/Hangman.png",
+        "projectImage": "/images/projects/Hangman.png",
         "projectName": "Hangman Game",
         "shortDescription": "A terminal-based Hangman game built in Python using file I/O and randomization.",
         "technologiesUsed": ["Python"],
@@ -268,7 +268,7 @@
     },
     {
       "basicProjectCard": {
-        "projectImage": "/src/data/images/projects/breaking-bad.png",
+        "projectImage": "/images/projects/breaking-bad.png",
         "projectName": "Breaking Bad WinForms App",
         "shortDescription": "A c-sharp WinForms desktop application inspired by Breaking Bad with interactive multimedia features.",
         "technologiesUsed": ["c-sharp", ".NET Framework", "WinForms"],
@@ -296,7 +296,7 @@
     },
     {
       "basicProjectCard": {
-        "projectImage": "/src/data/images/projects/Net-Stat.png",
+        "projectImage": "/images/projects/Net-Stat.png",
         "projectName": "Net Stat Check",
         "shortDescription": "A Python tool for checking internet connectivity and displaying IP status, bundled as an executable.",
         "technologiesUsed": ["Python", "PyInstaller", "subprocess"],
@@ -324,7 +324,7 @@
     },
     {
       "basicProjectCard": {
-        "projectImage": "/src/data/images/projects/Real-Time-Chat-App.png",
+        "projectImage": "/images/projects/Real-Time-Chat-App.png",
         "projectName": "Real-Time Chat App",
         "shortDescription": "A real-time chat application enabling seamless communication using WebSockets and MongoDB.",
         "technologiesUsed": [
