@@ -12,7 +12,7 @@ const About = () => {
         <Row className="about-intro-row">
           <Col md={6} sm={12} className="about-intro-col">
             <img
-              src="/public/images/full-hero.png"
+              src="/src/data/images/full-hero.png"
               alt="Profile"
               className="profile-image"
             />

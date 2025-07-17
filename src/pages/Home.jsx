@@ -116,7 +116,7 @@ const Home = () => {
           </Col>
           <Col md={6} sm={12} className="hero-image-col">
             <img
-              src="/public/images/profile1.png"
+              src="/src/data/images/profile1.png"
               alt="Hero"
               className="hero-image"
             />
