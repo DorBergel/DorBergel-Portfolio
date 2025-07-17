@@ -8,9 +8,11 @@ import Navbar from "../components/Navbar"; // Import the Navbar component
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const form = React.useRef();
+  const navigate = useNavigate();
 
   // Handle Download Resume
   const handleDownloadResume = () => {
@@ -181,11 +183,9 @@ const Home = () => {
           <div className="for-more-button">
             <a
               onClick={() => {
-                window.location.href = "/projects";
+                navigate("/projects");
               }}
-            >
-              {`>`}
-            </a>
+            >{`>`}</a>
           </div>
         </Row>
       </section>
