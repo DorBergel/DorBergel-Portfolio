@@ -107,3 +107,25 @@
     transform: translateY(0) scale(1);
   }
 }
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  padding: 6px 12px;
+  background-color: var(--button-primary);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05);
+}

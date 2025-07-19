@@ -448,3 +448,10 @@
     right: -10px;
   }
 }
+
+/* Disable animation on mobile */
+@media (max-width: 768px) {
+  .project-image {
+    animation: none;
+  }
+}

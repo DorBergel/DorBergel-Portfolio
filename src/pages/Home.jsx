@@ -28,7 +28,7 @@ const Home = () => {
   const handleOnGmailClick = () => {
     // Copy the email address to the clipboard
     navigator.clipboard
-      .writeText(generalData.contact.email)
+      .writeText(generalData.Shared.contact.email)
       .then(() => {
         console.log("Email address copied to clipboard");
         // Notify the user that the email address has been copied
@@ -44,11 +44,19 @@ const Home = () => {
   };
 
   const handleOnGithubClick = () => {
-    window.open(generalData.contact.github, "_blank", "noopener,noreferrer");
+    window.open(
+      generalData.Shared.contact.github,
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   const handleOnLinkedInClick = () => {
-    window.open(generalData.contact.linkedin, "_blank", "noopener,noreferrer");
+    window.open(
+      generalData.Shared.contact.linkedin,
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   const handleFormSubmit = (event) => {
@@ -112,8 +120,8 @@ const Home = () => {
       <section className="hero">
         <Row className="hero-row">
           <Col md={6} sm={12} className="hero-text">
-            <h1>{generalData.name}</h1>
-            <h2>{generalData.title}</h2>
+            <h1>{generalData.Home.name}</h1>
+            <h2>{generalData.Home.title}</h2>
             <Button variant="primary">Download CV</Button>
           </Col>
           <Col md={6} sm={12} className="hero-image-col">
@@ -123,12 +131,12 @@ const Home = () => {
       </section>
       <section className="about">
         <h1>About Me</h1>
-        <p>{generalData.summary}</p>
+        <p>{generalData.Home.about_me_summary}</p>
 
         <section className="tech-slider-wrapper">
           <div className="tech-slider">
             {/* First set of icons */}
-            {generalData.iconSkills.map((skill, index) => (
+            {generalData.Shared.carouselSkills.map((skill, index) => (
               <div key={`first-${index}`} className="tech-icon">
                 <img
                   src={`/icons/${skill}.svg`}
@@ -146,7 +154,7 @@ const Home = () => {
             ))}
 
             {/* Duplicate set for seamless loop */}
-            {generalData.iconSkills.map((skill, index) => (
+            {generalData.Shared.carouselSkills.map((skill, index) => (
               <div key={`second-${index}`} className="tech-icon">
                 <img
                   src={`/icons/${skill}.svg`}
@@ -172,12 +180,12 @@ const Home = () => {
         <Row className="project-row">
           <Col md={4} sm={12}>
             <Stack gap={4}>
-              <ProjectCard project={generalData.projects[0]} />
-              <ProjectCard project={generalData.projects[2]} />
+              {<ProjectCard project={generalData.Shared.projects[0]} />}
+              {<ProjectCard project={generalData.Shared.projects[2]} />}
             </Stack>
           </Col>
           <Col md={4} sm={12} className="project-card-col">
-            <ProjectCard project={generalData.projects[1]} />
+            {<ProjectCard project={generalData.Shared.projects[1]} />}
           </Col>
 
           <div className="for-more-button">
@@ -204,7 +212,7 @@ const Home = () => {
               <div className="contact-item" onClick={handleOnGmailClick}>
                 <img src="/icons/gmail.svg" alt="Email Icon" />
                 <span>
-                  <b>{generalData.contact.email}</b>
+                  <b>{generalData.Shared.contact.email}</b>
                 </span>
               </div>
               <div className="contact-item" onClick={handleOnGithubClick}>

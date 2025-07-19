@@ -1,0 +1,371 @@
+{
+  "name": "Dor Bergel",
+  "title": "Software Developer | QA Automation Engineer",
+  "summary": "Software Developer with over 2 years of hands-on experience in building reliable automated systems. Skilled in C++ and Python, with experience in performance testing, API development with Postman, and database management MongoDB. Known for strong attention to detail, a problem-solving approach, and the ability to work well with QA and development team to improve project outcomes. Comfortable working in CI/CD environments and tracking progress using Git.",
+  "contact": {
+    "email": "dor.bergel9@gmail.com",
+    "phone": "+972-54-499-4834",
+    "linkedin": "https://linkedin.com/in/dor-bergel",
+    "github": "https://github.com/DorBergel"
+  },
+  "work_experience": [
+    {
+      "position": "QA & Automation Engineer",
+      "company": "Softil Ltd.",
+      "duration": "2022 - Present",
+      "responsibilities": [
+        "Created and optimized automation tests for web and UI applications using Python and MongoDB.",
+        "Developed and maintained automation infrastructure with Jenkins and Git, integrating continuous testing.",
+        "Conducted performance testing with Python to ensure speed and stability benchmarks.",
+        "Collaborated with QA and dev teams to identify and resolve bugs quickly using Jira."
+      ]
+    },
+    {
+      "position": "Iron Dome Interceptor",
+      "company": "IDF",
+      "duration": "2018 – 2021",
+      "responsibilities": [
+        "Completed basic training 03.",
+        "Served 8 months as Iron Dome soldier responsible for launcher deployment and security.",
+        "Served as an interceptor in the southern region.",
+        "Instructed at the interceptors course."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Holon Institute of Technology",
+      "degree": "B.Sc. in Computer Science",
+      "duration": "2021 - 2024",
+      "content": [
+        "Courses in C++, Python, Web Development, and Database Management.",
+        "Algorithms and Data Structures, Software Engineering, and System Design.",
+        "Security, Networking, Low-Level Programming"
+      ]
+    },
+    {
+      "institution": "HTH High School, Holon",
+      "major": "Technology Science",
+      "duration": "2012 – 2018"
+    }
+  ],
+  "iconSkills": [
+    "bash",
+    "c",
+    "c++",
+    "copilot",
+    "css",
+    "expressjs",
+    "git",
+    "github",
+    "html",
+    "kotlin",
+    "linux",
+    "mongodb",
+    "websocket",
+    "pandas",
+    "nodejs",
+    "postman",
+    "python",
+    "react",
+    "jenkins",
+    "jira"
+  ],
+  "skills": [
+    "c",
+    "c++",
+    "c-sharp",
+    "python",
+    "html",
+    "css",
+    "bootstrap",
+    "javascript",
+    "nodejs",
+    "react",
+    "expressjs",
+    "kotlin",
+    "linux",
+    "bash",
+    "git",
+    "jenkins",
+    "mongodb",
+    "postman",
+    "jira",
+    "selenium",
+    "github copilot",
+    "tcp",
+    "udp",
+    "dns",
+    "sip",
+    "sdp",
+    "qa automation scripts",
+    "results analysis"
+  ],
+  "iconSkillCategories": [
+    {
+      "name": "Languages",
+      "skills": ["c", "c++", "c-sharp", "python", "javascript", "kotlin"],
+      "content": "Proficient in multiple programming languages, with a focus on C++, Python, and JavaScript for backend and automation tasks."
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "skills": ["react", "expressjs", "selenium", "bootstrap", "NET"],
+      "content": "Experienced in using React for frontend development, Express.js for backend services, and Selenium for automation testing."
+    },
+    {
+      "name": "Networking & Tools",
+      "skills": ["OSI Model", "Stracture", "Metasploit", "Wireshark", "Scapy"],
+      "content": "Knowledgeable in networking concepts and tools, including the OSI model, network structure, and security testing with Metasploit and Wireshark."
+    },
+    {
+      "name": "Tools & Technologies",
+      "skills": ["git", "jenkins", "mongodb", "postman", "jira", "selenium"],
+      "content": "Proficient in version control with Git, familiar with CI/CD pipelines using Jenkins, and experienced in database management with MongoDB. Skilled in API testing with Postman and project"
+    }
+  ],
+  "projects": [
+    {
+      "name": "RT-Chat",
+      "description": "Developed a real-time chat application using React and Node.js, implementing WebSocket for live messaging and MongoDB for data storage.",
+      "technologies": ["React", "Nodejs", "Expressjs", "MongoDB", "WebSocket"],
+      "link": "https://github.com/DorBergel/Real-Time-Chat-App",
+      "image": "/images/rt-chat.png"
+    },
+    {
+      "name": "API Testing Suite",
+      "description": "Created an API testing suite using Postman to ensure reliability and performance of backend services, achieving 95% test coverage.",
+      "technologies": ["Postman", "Python", "Git"],
+      "link": "github.com/DorBergel/api-testing-suite",
+      "image": "https://example.com/api-testing-suite.png"
+    },
+    {
+      "name": "Performance Testing Tool",
+      "description": "Built a performance testing tool in Python to evaluate system speed and stability, identifying bottlenecks and improving response times by 30%.",
+      "technologies": ["Python", "MongoDB", "Git"],
+      "link": "github.com/DorBergel/performance-testing-tool",
+      "image": "https://example.com/performance-testing-tool.png"
+    }
+  ],
+  "about-intro": "Hi, I’m Dor — a software developer with a background in automation and a hands-on approach to problem solving. I’ve spent the last couple of years building test infrastructure and automation pipelines, but what really excites me is getting closer to the system: backend logic, embedded control, and developer tools that \"make life easier\". I may not have all the answers yet, but I’ll keep asking the right questions until something elegant works. Reliable, quiet, and relentless: that’s my style.",
+  "why-me": "I’m passionate about building reliable systems and improving processes. My experience in QA automation has given me a unique perspective on software development, allowing me to identify and resolve issues early in the development cycle. I thrive in collaborative environments where I can work closely with both QA and development teams to enhance project outcomes. My goal is to contribute to projects that challenge me and allow me to grow as a developer.",
+  "projects-page": [
+    {
+      "basicProjectCard": {
+        "projectImage": "/images/projects/Pink-Floyd-Browser.png",
+        "projectName": "Pink Floyd Browser",
+        "shortDescription": "A Python TCP client-server app for browsing Pink Floyd\u2019s discography using a text database.",
+        "technologiesUsed": ["Python", "Sockets", "Text Processing"],
+        "links": {
+          "viewDetails": "https://github.com/DorBergel/Pink-Floyd-Browser",
+          "github": "https://github.com/DorBergel/Pink-Floyd-Browser"
+        }
+      },
+      "extendedProject": {
+        "header": {
+          "projectName": "Pink Floyd Browser",
+          "extendedDescription": "A simple command-line client-server application that lets users explore Pink Floyd albums by querying a structured text file over a TCP connection."
+        },
+        "contentSections": {
+          "objective": "To demonstrate network programming fundamentals in Python by simulating a music discography browser.",
+          "keyAchievements": [
+            "Established a socket-based client-server model in Python.",
+            "Parsed and served album data from a structured text file.",
+            "Designed a lightweight terminal interface for browsing."
+          ],
+          "technologiesImplemented": ["Python", "Socket Programming"],
+          "impactAndFutureWork": "Provides a strong foundation for learning networking basics. Future work may include concurrency support and enhanced user navigation."
+        }
+      }
+    },
+    {
+      "basicProjectCard": {
+        "projectImage": "/images/projects/Gender-Detection.png",
+        "projectName": "Gender Detection via Text",
+        "shortDescription": "Predicts an author's gender based on linguistic features using classic NLP methods.",
+        "technologiesUsed": ["Python", "NLTK", "scikit-learn", "pandas"],
+        "links": {
+          "viewDetails": "https://github.com/DorBergel/Gender-Detection",
+          "github": "https://github.com/DorBergel/Gender-Detection"
+        }
+      },
+      "extendedProject": {
+        "header": {
+          "projectName": "Gender Detection via Text",
+          "extendedDescription": "An NLP-based classifier that predicts author gender based on stylometric and lexical features from text data."
+        },
+        "contentSections": {
+          "objective": "To analyze gender-specific linguistic patterns and build a machine learning model for prediction.",
+          "keyAchievements": [
+            "Cleaned and vectorized raw text data for feature extraction.",
+            "Trained and evaluated multiple classifiers on annotated corpora.",
+            "Demonstrated high classification accuracy using classical ML models."
+          ],
+          "technologiesImplemented": [
+            "Python",
+            "scikit-learn",
+            "NLTK",
+            "pandas"
+          ],
+          "impactAndFutureWork": "Opens opportunities for ethical discussion and further analysis using deep learning models or multilingual datasets."
+        }
+      }
+    },
+    {
+      "basicProjectCard": {
+        "projectImage": "/images/projects/Vynil-Price-Prediction.png",
+        "projectName": "Vinyl Price Prediction",
+        "shortDescription": "A regression model predicting vinyl record prices based on condition, artist, and other metadata.",
+        "technologiesUsed": ["Python", "pandas", "scikit-learn", "Jupyter"],
+        "links": {
+          "viewDetails": "https://github.com/DorBergel/Vinyl-Price-Prediction",
+          "github": "https://github.com/DorBergel/Vinyl-Price-Prediction"
+        }
+      },
+      "extendedProject": {
+        "header": {
+          "projectName": "Vinyl Price Prediction",
+          "extendedDescription": "Machine learning model to estimate the market value of vinyl records based on structured dataset attributes."
+        },
+        "contentSections": {
+          "objective": "To assist collectors and resellers in valuing vinyl records based on data trends.",
+          "keyAchievements": [
+            "Performed exploratory data analysis and preprocessing.",
+            "Trained regression models on curated vinyl data.",
+            "Delivered price estimates with meaningful accuracy."
+          ],
+          "technologiesImplemented": ["Python", "pandas", "scikit-learn"],
+          "impactAndFutureWork": "Could be extended into a web-based appraisal tool with richer datasets and pricing logic."
+        }
+      }
+    },
+    {
+      "basicProjectCard": {
+        "projectImage": "/images/projects/Hangman.png",
+        "projectName": "Hangman Game",
+        "shortDescription": "A terminal-based Hangman game built in Python using file I/O and randomization.",
+        "technologiesUsed": ["Python"],
+        "links": {
+          "viewDetails": "https://github.com/DorBergel/Hangman",
+          "github": "https://github.com/DorBergel/Hangman"
+        }
+      },
+      "extendedProject": {
+        "header": {
+          "projectName": "Hangman Game",
+          "extendedDescription": "Classic Hangman word-guessing game implemented in Python with random word selection and user input validation."
+        },
+        "contentSections": {
+          "objective": "To create a simple command-line game showcasing core Python skills.",
+          "keyAchievements": [
+            "Implemented gameplay loop and input checks.",
+            "Used external word list with file operations.",
+            "Randomized word choice for replayability."
+          ],
+          "technologiesImplemented": ["Python"],
+          "impactAndFutureWork": "Could evolve into a GUI-based version or online multiplayer mode."
+        }
+      }
+    },
+    {
+      "basicProjectCard": {
+        "projectImage": "/images/projects/breaking-bad.png",
+        "projectName": "Breaking Bad WinForms App",
+        "shortDescription": "A c-sharp WinForms desktop application inspired by Breaking Bad with interactive multimedia features.",
+        "technologiesUsed": ["c-sharp", ".NET Framework", "WinForms"],
+        "links": {
+          "viewDetails": "https://github.com/DorBergel/Breaking-Bad",
+          "github": "https://github.com/DorBergel/Breaking-Bad"
+        }
+      },
+      "extendedProject": {
+        "header": {
+          "projectName": "Breaking Bad WinForms App",
+          "extendedDescription": "A themed Windows Forms desktop application with interactive elements, images, and sound effects, built in c-sharp."
+        },
+        "contentSections": {
+          "objective": "To apply UI design and event handling in a desktop application inspired by a popular TV show.",
+          "keyAchievements": [
+            "Implemented responsive WinForms interface.",
+            "Integrated images and audio for immersive experience.",
+            "Used Visual Studio and .NET tooling to compile and test."
+          ],
+          "technologiesImplemented": ["c-sharp", ".NET", "WinForms"],
+          "impactAndFutureWork": "Can serve as a base for themed educational apps or interactive desktop utilities."
+        }
+      }
+    },
+    {
+      "basicProjectCard": {
+        "projectImage": "/images/projects/Net-Stat.png",
+        "projectName": "Net Stat Check",
+        "shortDescription": "A Python tool for checking internet connectivity and displaying IP status, bundled as an executable.",
+        "technologiesUsed": ["Python", "PyInstaller", "subprocess"],
+        "links": {
+          "viewDetails": "https://github.com/DorBergel/Net-Stat-Check",
+          "github": "https://github.com/DorBergel/Net-Stat-Check"
+        }
+      },
+      "extendedProject": {
+        "header": {
+          "projectName": "Net Stat Check",
+          "extendedDescription": "Network diagnostic CLI tool that checks internet status and outputs results via a self-contained executable."
+        },
+        "contentSections": {
+          "objective": "To offer a simple tool for users to verify internet connection without requiring Python installed.",
+          "keyAchievements": [
+            "Used subprocess to run platform-specific network commands.",
+            "Packaged tool with PyInstaller into a Windows executable.",
+            "Minimized footprint and improved usability for non-developers."
+          ],
+          "technologiesImplemented": ["Python", "subprocess", "PyInstaller"],
+          "impactAndFutureWork": "Could include GUI, system tray support, or cross-platform builds."
+        }
+      }
+    },
+    {
+      "basicProjectCard": {
+        "projectImage": "/images/projects/Real-Time-Chat-App.png",
+        "projectName": "Real-Time Chat App",
+        "shortDescription": "A real-time chat application enabling seamless communication using WebSockets and MongoDB.",
+        "technologiesUsed": [
+          "Node.js",
+          "Express",
+          "Socket.IO",
+          "MongoDB",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "links": {
+          "viewDetails": "https://github.com/DorBergel/Real-Time-Chat-App",
+          "github": "https://github.com/DorBergel/Real-Time-Chat-App"
+        }
+      },
+      "extendedProject": {
+        "header": {
+          "projectName": "Real-Time Chat App",
+          "extendedDescription": "This chat application provides users with a responsive and real-time messaging platform. Built with scalability and performance in mind, it supports live message broadcasting and persistent chat history through database integration."
+        },
+        "contentSections": {
+          "objective": "To create a robust and real-time communication platform that supports persistent chat rooms and instantaneous message delivery using WebSockets.",
+          "keyAchievements": [
+            "Implemented Socket.IO for real-time, bi-directional communication between users.",
+            "Integrated MongoDB to store chat history and user data persistently.",
+            "Built a responsive front-end interface with clean user interaction.",
+            "Designed modular server-side architecture for scalability and easy feature extension."
+          ],
+          "technologiesImplemented": [
+            "Node.js",
+            "Express",
+            "Socket.IO",
+            "MongoDB",
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "impactAndFutureWork": "This project served as a foundation for understanding event-driven architecture and real-time web applications. Future improvements may include authentication with JWT, user presence indicators, and support for media messages and private rooms."
+        }
+      }
+    }
+  ]
+}

@@ -20,7 +20,7 @@ const About = () => {
           <Col md={6} sm={12} className="about-intro-col">
             <h1>About Me</h1>
 
-            {generalData["about-intro"]}
+            {generalData.About["about-intro"]}
           </Col>
         </Row>
       </section>
@@ -28,11 +28,11 @@ const About = () => {
         <Row className="tech-row">
           <Col md={6} sm={12} className="tech-col">
             <div className="cell work-experience-cell">
-              <h1>{generalData.work_experience[0].position}</h1>
-              <h2>{generalData.work_experience[0].company}</h2>
-              <h4>{generalData.work_experience[0].duration}</h4>
+              <h1>{generalData.About.work_experience[0].position}</h1>
+              <h2>{generalData.About.work_experience[0].company}</h2>
+              <h4>{generalData.About.work_experience[0].duration}</h4>
               <ul>
-                {generalData.work_experience[0].responsibilities.map(
+                {generalData.About.work_experience[0].responsibilities.map(
                   (responsibility, index) => (
                     <li key={index}>{responsibility}</li>
                   )
@@ -42,11 +42,11 @@ const About = () => {
           </Col>
           <Col md={6} sm={12} className="tech-col">
             <div className="cell education-cell">
-              <h1>{generalData.education[0].degree}</h1>
-              <h2>{generalData.education[0].institution}</h2>
-              <h4>{generalData.education[0].duration}</h4>
+              <h1>{generalData.About.education[0].degree}</h1>
+              <h2>{generalData.About.education[0].institution}</h2>
+              <h4>{generalData.About.education[0].duration}</h4>
               <ul>
-                {generalData.education[0].content.map((item, index) => (
+                {generalData.About.education[0].content.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
@@ -62,7 +62,7 @@ const About = () => {
           <Col md={6} sm={12} className="tech-card-col">
             <div className="why-choose-me">
               <h1>Why Choose Me?</h1>
-              <p>{generalData["why-me"]}</p>
+              <p>{generalData.About["why-me"]}</p>
             </div>
           </Col>
         </Row>

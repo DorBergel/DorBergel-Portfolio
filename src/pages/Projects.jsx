@@ -8,7 +8,7 @@ import generalData from "../data/general.json";
 
 const Projects = () => {
   const [selectedCard, setSelectedCard] = React.useState(
-    generalData["projects-page"][0]
+    generalData.Shared.projects[0]
   );
 
   // Create a ref for the project content section
@@ -63,28 +63,23 @@ const Projects = () => {
         <Row className="project-row">
           <Col sm={12} className="projects-column">
             <Slider {...settings} className="projects-carousel">
-              {generalData["projects-page"].map((project, index) => (
+              {generalData.Shared.projects.map((project, index) => (
                 <div key={index} className="carousel-item-wrapper">
                   <div
                     className="project-card"
                     onClick={() => handleCardClick(project)}
                   >
                     <div className="project-image">
-                      <img
-                        src={project.basicProjectCard.projectImage}
-                        alt={project.basicProjectCard.projectName}
-                      />
+                      <img src={project.image} alt={project.projectName} />
                     </div>
-                    <h2>{project.basicProjectCard.projectName}</h2>
-                    <p>{project.basicProjectCard.shortDescription}</p>
+                    <h2>{project.projectName}</h2>
+                    <p>{project.shortDescription}</p>
                     <div className="project-tech">
-                      {project.basicProjectCard.technologiesUsed.map(
-                        (tech, techIndex) => (
-                          <span key={techIndex} className="tech-tag">
-                            {tech}
-                          </span>
-                        )
-                      )}
+                      {project.technologies.map((tech, techIndex) => (
+                        <span key={techIndex} className="tech-tag">
+                          {tech}
+                        </span>
+                      ))}
                     </div>
                     <div className="project-links">
                       <a
@@ -96,10 +91,7 @@ const Projects = () => {
                       >
                         View Details
                       </a>
-                      <a
-                        href={project.basicProjectCard.github}
-                        className="project-link"
-                      >
+                      <a href={project.link} className="project-link">
                         Git Hub
                       </a>
                     </div>
@@ -114,15 +106,13 @@ const Projects = () => {
             {selectedCard && (
               <div className="project-extended-details">
                 <div className="project-header">
-                  <h2>{selectedCard.extendedProject.header.projectName}</h2>
-                  <p>
-                    {selectedCard.extendedProject.header.extendedDescription}
-                  </p>
+                  <h2>{selectedCard.projectName}</h2>
+                  <p>{selectedCard.description}</p>
                 </div>
                 <div className="project-image">
                   <img
-                    src={selectedCard.basicProjectCard.projectImage}
-                    alt={selectedCard.extendedProject.header.projectName}
+                    src={selectedCard.image}
+                    alt={selectedCard.projectName}
                   />
                 </div>
                 <hr />
@@ -131,19 +121,14 @@ const Projects = () => {
                     <Col lg={4} sm={12} className="project-content-col">
                       <div className="project-objective">
                         <h3>Objective</h3>
-                        <p>
-                          {
-                            selectedCard.extendedProject.contentSections
-                              .objective
-                          }
-                        </p>
+                        <p>{selectedCard.objective}</p>
                       </div>
                     </Col>
                     <Col lg={4} sm={12} className="project-content-col">
                       <div className="project-key-achievements">
                         <h3>Key Achievements</h3>
                         <ul>
-                          {selectedCard.extendedProject.contentSections.keyAchievements.map(
+                          {selectedCard.keyAchievements.map(
                             (achievement, index) => (
                               <li key={index}>{achievement}</li>
                             )
@@ -157,25 +142,18 @@ const Projects = () => {
                       <div className="project-technologies">
                         <h3>Technologies Used</h3>
                         <div className="tech-tags">
-                          {selectedCard.basicProjectCard.technologiesUsed.map(
-                            (tech, index) => (
-                              <span key={index} className="tech-tag">
-                                {tech}
-                              </span>
-                            )
-                          )}
+                          {selectedCard.technologies.map((tech, index) => (
+                            <span key={index} className="tech-tag">
+                              {tech}
+                            </span>
+                          ))}
                         </div>
                       </div>
                     </Col>
                     <Col lg={4} sm={12} className="project-content-col">
                       <div className="project-impact">
                         <h3>Impact</h3>
-                        <p>
-                          {
-                            selectedCard.extendedProject.contentSections
-                              .impactAndFutureWork
-                          }
-                        </p>
+                        <p>{selectedCard.impactAndFutureWork}</p>
                       </div>
                     </Col>
                   </Row>

@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap";
 
 const TechTable = () => {
   const [activeCategory, setActiveCategory] = useState(
-    generalData.iconSkillCategories[0].name
+    generalData.Shared["tech-table"][0].name
   );
 
   return (
@@ -15,7 +15,7 @@ const TechTable = () => {
           <Row>
             <Col lg={3} md={12} sm={12} className="toggles-col">
               <div className="toggle-buttons">
-                {generalData.iconSkillCategories.map((category, index) => (
+                {generalData.Shared["tech-table"].map((category, index) => (
                   <button
                     key={index}
                     className={`toggle-button ${
@@ -29,7 +29,7 @@ const TechTable = () => {
               </div>
             </Col>
             <Col lg={9} md={12} sm={12} className="content-col">
-              {generalData.iconSkillCategories.map((category, index) => {
+              {generalData.Shared["tech-table"].map((category, index) => {
                 if (category.name === activeCategory) {
                   return (
                     <div key={index} className={`category ${category.name}`}>
