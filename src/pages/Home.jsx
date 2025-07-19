@@ -17,7 +17,7 @@ const Home = () => {
   // Handle Download Resume
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/files/Dor_Bergel_Resume.pdf"; // Adjust the path to your resume file
+    link.href = "/src/data/Dor_Bergel_Resume.pdf"; // Adjust the path to your resume file
     link.download = "Dor_Bergel_Resume.pdf"; // Name of the downloaded file
     document.body.appendChild(link);
     link.click();
