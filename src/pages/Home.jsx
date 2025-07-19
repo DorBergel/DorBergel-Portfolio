@@ -122,7 +122,9 @@ const Home = () => {
           <Col md={6} sm={12} className="hero-text">
             <h1>{generalData.Home.name}</h1>
             <h2>{generalData.Home.title}</h2>
-            <Button variant="primary">Download CV</Button>
+            <Button variant="primary" onClick={handleDownloadResume}>
+              Download CV
+            </Button>
           </Col>
           <Col md={6} sm={12} className="hero-image-col">
             <img src="/images/profile1.png" alt="Hero" className="hero-image" />
