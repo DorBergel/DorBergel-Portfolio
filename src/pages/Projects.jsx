@@ -65,10 +65,7 @@ const Projects = () => {
             <Slider {...settings} className="projects-carousel">
               {generalData.Shared.projects.map((project, index) => (
                 <div key={index} className="carousel-item-wrapper">
-                  <div
-                    className="project-card"
-                    onClick={() => handleCardClick(project)}
-                  >
+                  <div className="project-card">
                     <div className="project-image">
                       <img src={project.image} alt={project.projectName} />
                     </div>
@@ -91,7 +88,12 @@ const Projects = () => {
                       >
                         View Details
                       </a>
-                      <a href={project.link} className="project-link">
+                      <a
+                        href={project.link}
+                        className="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Git Hub
                       </a>
                     </div>
@@ -157,26 +159,6 @@ const Projects = () => {
                       </div>
                     </Col>
                   </Row>
-                  {/*<Row className="project-content-row">
-                        <Col md={6} sm={12} className="project-content-col">
-                            <div className="project-technologies">
-                                <h3>Technologies Used</h3>
-                                <div className="tech-tags">
-                                    {selectedCard.basicProjectCard.technologiesUsed.map((tech, index) => (
-                                        <span key={index} className="tech-tag">
-                                        {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={6} md={6} sm={12} className="project-content-col">
-                            <div className="project-impact">
-                                <h3>Impact</h3>
-                                <p>{selectedCard.extendedProject.contentSections.impactAndFutureWork}</p>
-                            </div>
-                        </Col>
-                    </Row>*/}
                 </div>
               </div>
             )}
@@ -188,33 +170,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-/*
-<div className="project-objective">
-                        <h3>Objective</h3>
-                        <p>{selectedCard.extendedProject.contentSections.objective}</p>
-                    </div>
-                    <div className="project-key-achievements">
-                        <h3>Key Achievements</h3>
-                        <ul>
-                          {selectedCard.extendedProject.contentSections.keyAchievements.map((achievement, index) => (
-                            <li key={index}>{achievement}</li>
-                          ))}
-                        </ul>
-                    </div>
-                    <div className="project-technologies">
-                        <h3>Technologies Used</h3>
-                        <div className="tech-tags">
-                          {selectedCard.basicProjectCard.technologiesUsed.map((tech, index) => (
-                            <span key={index} className="tech-tag">
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
-
-                    </div>
-                    <div className="project-impact">
-                        <h3>Impact</h3>
-                        <p>{selectedCard.extendedProject.contentSections["impactAndFutureWork"]}</p>
-                    </div>
-                    */

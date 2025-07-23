@@ -42,14 +42,10 @@ const Navbar = () => {
             <Nav.Link as={RouterLink} to="/about">
               About
             </Nav.Link>
-            <Nav.Link
-              as={RouterLink}
-              to="/projects"
-              
-            >
+            <Nav.Link as={RouterLink} to="/projects">
               Projects
             </Nav.Link>
-            <Nav.Link as={ScrollLink} to="contact" smooth={true} duration={500}>
+            <Nav.Link as={RouterLink} to="/contact">
               Contact
             </Nav.Link>
           </Nav>
