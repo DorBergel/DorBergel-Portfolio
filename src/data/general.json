@@ -53,6 +53,21 @@
     ],
     "projects": [
       {
+  "projectName": "NetWatch",
+  "description": "A real-time network monitoring CLI tool built in C using raw sockets.",
+  "technologies": ["C", "Raw Sockets", "Linux", "ncurses"],
+  "link": "https://github.com/DorBergel/NetWatch",
+  "image": "/images/projects/netwatch.png",
+  "objective": "To demonstrate low-level systems programming skills by capturing and analyzing network traffic in real time.",
+  "keyAchievements": [
+    "Built a raw socket packet sniffer using AF_PACKET on Linux.",
+    "Parsed Ethernet, IP, TCP, UDP, and ICMP headers manually.",
+    "Displayed live protocol statistics using ncurses for a terminal-based UI.",
+    "Implemented connection tracking and real-time packet/byte counters."
+  ],
+  "impactAndFutureWork": "NetWatch offers insight into Linux networking internals and packet inspection. Future updates may include file logging, filtering by interface/protocol, and cross-platform compatibility."
+},
+      {
         "projectName": "Pink Floyd Browser",
         "description": "A Python TCP client-server app for browsing Pink Floyd’s discography using a text database.",
         "technologies": ["Python", "Sockets", "Text Processing"],
